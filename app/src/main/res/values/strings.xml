@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SampleIntent</string>
+    <string name="enter_phone_no">Enter Phone No</string>
+    <string name="send_to_second_activity">Send to Second Activity</string>
+</resources>
