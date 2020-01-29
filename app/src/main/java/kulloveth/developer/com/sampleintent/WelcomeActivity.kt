@@ -14,6 +14,9 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
+        setSupportActionBar(toolbar)
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+
         val receivedString: String? = intent.getStringExtra(PHONE_NO)
         phoneTextView.text = receivedString
         val phoneNo: String = phoneTextView.text.toString()
@@ -21,6 +24,8 @@ class WelcomeActivity : AppCompatActivity() {
         dial.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel: $phoneNo"))
             startActivity(intent)
+
+
         }
 
     }

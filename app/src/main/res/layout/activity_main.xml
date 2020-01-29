@@ -7,6 +7,8 @@
     tools:context=".MainActivity">
 
 
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
@@ -31,14 +33,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_phone_no"
-            android:inputType="number" />
+
+            android:inputType="number"
+            android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/sendButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/dimens_60dp"
         android:layout_margin="@dimen/dimens_16dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/send_to_second_activity"
