@@ -17,11 +17,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phoneInputLayout"
-        android:layout_width="match_parent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/dimens_16dp"
         app:boxStrokeColor="@color/colorPrimaryDark"
-        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline">
@@ -29,20 +29,20 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneEditText"
             android:layout_width="match_parent"
-            android:inputType="number"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_phone_no" />
+            android:hint="@string/enter_phone_no"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:text="@string/send_to_second_activity"
         android:layout_margin="@dimen/dimens_16dp"
-        android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
+        android:text="@string/send_to_second_activity"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phoneInputLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
