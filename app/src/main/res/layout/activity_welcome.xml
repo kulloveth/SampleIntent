@@ -27,6 +27,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
+        android:id="@+id/dial"
         android:layout_height="@dimen/dimens_60dp"
         android:text="@string/dial"
         android:textColor="@android:color/white"
